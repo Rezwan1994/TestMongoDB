@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kIxgaZlnpj1PHOaV6l1wqU5M/JsRE5tO7vjEH5IlxBs=",
+  "Source": "MongoDbTest",
+  "BasePath": "_content/MongoDbTest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
