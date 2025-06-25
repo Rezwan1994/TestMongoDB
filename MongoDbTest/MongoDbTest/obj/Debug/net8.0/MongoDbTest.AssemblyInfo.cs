@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MongoDbTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6da5d3b46ee73a0506665cfa35e3a032d683e402")]
 [assembly: System.Reflection.AssemblyProductAttribute("MongoDbTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MongoDbTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

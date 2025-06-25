@@ -5,17 +5,20 @@ namespace MongoDbTest
 {
     public class MongoService
     {
-        private readonly IMongoCollection<Student> _posts;
+        private readonly IMongoCollection<DrowInfo> _posts;
 
         public MongoService(IConfiguration config)
         {
             var client = new MongoClient(config["MongoDb:ConnectionString"]);
             var database = client.GetDatabase(config["MongoDb:DatabaseName"]);
-            _posts = database.GetCollection<Student>("Students");
+            _posts = database.GetCollection<DrowInfo>("DrawInfo");
         }
 
-        public Task<List<Student>> GetPostsAsync() => _posts.Find(_ => true).ToListAsync();
+        public Task<List<DrowInfo>> GetPostsAsync(int bookPageId)
+        {
+            return _posts.Find(d => d.BookPageId == 3905).ToListAsync();
+        }
 
-        public Task CreatePostAsync(Student student) => _posts.InsertOneAsync(student);
+        public Task CreatePostAsync(DrowInfo student) => _posts.InsertOneAsync(student);
     }
 }
